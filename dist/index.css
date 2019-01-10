@@ -1,0 +1,357 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Pangolin', 'Comic Sans MS', cursive;
+}
+
+.header-top {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  text-transform: uppercase;
+  background-image: url(./images/background-header.png);
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+.header-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+}
+
+.header-logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+.header-menu a {
+  padding: 7px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #8B0000;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  font-weight: bold;
+}
+.header-menu a:hover {
+  box-shadow: 0 0 8px #FFFFFF;
+}
+
+.header-menu a:first-child {
+  margin-left: 0;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(./images/background-section-top.png);
+  background-size: 100% 100%;
+}
+
+.section-head {
+  margin: 465px 0 28px;
+  font-size: 6.2rem;
+  color: #FF0000;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+.section-head p {
+  margin: 0;
+}
+
+.main-history {
+  padding: 80px 0;
+  background: #391B13;
+}
+
+.main-history-description {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: #CDB065;
+}
+
+.main-screenshot-container {
+  padding: 80px 0;
+  background: #CDB065;
+}
+
+.screenshot-top,
+.screenshot-botoom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.screenshot-botoom {
+  margin-top: 20px;
+}
+
+.screenshots {
+  max-width: 380px;
+  width: 100%;
+  max-height: 220px;
+}
+
+.screenshots:hover {
+  transform: scale(1.2,1.2);
+}
+
+.footer-start-page {
+  padding: 10px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #CDB065;
+  background: #391B13;
+}
+
+.git-link,
+.mail {
+  margin-left: 3px;
+  color: #CDB065;
+}
+
+.choose-player-name{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(./images/City2.png);
+  background-size: 100% 100%;
+}
+
+.form-choose-name {
+  width: 500px;
+  padding: 30px 10px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center; 
+  border-radius: 15px;
+  background: #87816C;
+  opacity: 0.8;
+}
+
+.description {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.submit-name {
+  background: #603C3C;
+  padding: 7px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 15px;
+}
+
+.player-name {
+  max-width: 200px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 15px;
+}
+
+.battle {
+  min-width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: url(./images/background-battle.png);
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+
+.canvas-field {
+  display: flex;
+  width: 150vh;
+  margin: 230px auto 0;
+}
+
+.blockResult {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.blockResultWin {
+  background-color: #008000;
+}
+
+.blockResultDefeat {
+  background-color: #FF0000;
+}
+
+.game-over {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 10px;
+  font-size: 1.8rem;
+  text-align: center;
+  background: #373C4F;
+}
+
+.game-over p {
+  max-width: 400px;
+  margin: auto auto 25px;
+  font-size: 2.5rem;
+}
+
+.goToHome {
+  padding: 7px 15px;
+  font-family: 'Pangolin', 'Comic Sans MS', cursive;
+  font-size: 1.8rem;
+  background: #515D60;
+  border-radius: 15px;
+  outline: none;
+}
+
+.game-over-container {
+  display: flex;
+  align-items: center;
+  background: url(./images/background-battle.png);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+
+
+@keyframes animate-glow {
+  0% {-webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;} 
+  50% {-webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;} 
+  100% {-webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+  }
+  
+div.battle-hp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 150vh;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hp-player-progress,
+.hp-monster-progress {
+  height: 20px;
+  width: 300px;
+  border-radius: 5px;
+  background: #736A44;
+}
+
+.hp-player,
+.hp-monster {
+  animation: animate-glow 1s ease-out infinite;
+  background-image: -webkit-linear-gradient(top, #a5df41, #4ca916);
+  background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
+  background-image: -ms-linear-gradient(top, #a5df41, #4ca916);
+  background-image: -o-linear-gradient(top, #a5df41, #4ca916);
+  background-image: linear-gradient(top, #a5df41, #4ca916);
+  display: inline-block;
+  height: 100%;
+  border-radius: 3px;
+  transition: width .4s ease-in-out;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-width: 100%;
+  padding: 0 10px 10px;
+  text-align: center;
+  background: #B2927D; 
+  border: 5px solid #615A5B;
+  border-radius: 10px;
+}
+
+.modal-tasks-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal button {
+  font-family: 'Pangolin', 'Comic Sans MS', cursive;
+  font-size: 1.7rem;
+  width: 190px;
+  margin-top: 10px;
+  background: #697579;
+  border: none;
+  box-shadow: 0 0 5px #30333D;
+}
+.mathTask {
+  font-size: 1.8rem;
+}
+.translateTask {
+  font-size: 1.8rem;
+}
+.fourthSuperfluousTask {
+  font-size: 1.8rem;
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.cityTask {
+  font-size: 1.8rem;
+}
+.tasksTask {
+  font-size: 1.8rem;
+}
